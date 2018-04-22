@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mithun2k5</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="{% static 'css/master.css'%}">
+
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+
+	<style>
+	    html,
+			body {
+			  height:100%
+			}
+
+			#one{
+				font-family: 'Merriweather', serif;
+				font-size: 18px;
+			}
+
+			#two{
+	       padding-left: 17em;
+				 font-size: 20px;
+			}
+
+			#three{
+				font-family: 'Merriweather', serif;
+				font-size: 30px;
+
+			}
+
+			#four{
+					font-size: 16px;
+			}
+
+			#five{
+				   font-size: 20px;
+
+			}
+
+			#six{
+				  font-size: 20px;
+	        color: purple;
+
+			}
+
+		 #seven{
+			 font-size: 16px;
+			 color: black;
+		 }
+
+		 #eight{
+			 font-size: 16px;
+			 color: purple;
+		 }
+
+		 #nine{
+	       color: black;
+
+		 }
+
+		 #ten{
+         font-size: 16px;
+				 color: green;
+
+		 }
+
+		 #eleven{
+				 font-size: 20px;
+				 color: green;
+
+		 }
+
+		</style>
+
+
+</head>
+
+<div id="gradient">
+<body class="body">
+
+
+	<div class="container-fluid" style="min-height:95%">
+		<div class="row">
+			  <div class="col-sm-2">
+				  <center>
+					<img src="{% static 'images/my_logo2.jpg' %}" class="responsive-img" style='max-height:100px;' alt="face">
+				  </center>
+			  </div>
+			  <div class="col-sm-7">
+				  <center>
+						<div class="alert alert-warning">
+						  <h1><strong>Mitun Talukder <small>Software Test Engineer, Cisco Systems Inc. </small></strong></h1>
+						</div>
+				  </center>
+			  </div>
+				<div class="col-sm-3">
+					<center>
+						<div class="alert alert-info" align = "center">
+						  <p>
+								<h4>
+							<strong>
+							"Hard work beats talent, <br>
+							when talent doesn't work hard" <br>
+							-Tim Notke
+					    </strong>
+						</h4>
+						</p>
+						</div>
+				  </center>
+				</div>
+		</div>
+
+		<div class="row">
+				  <div class="col-sm-2">
+					<div class="well bs-sidebar" id="sidebar" >
+					  <ul class="nav nav-pills nav-stacked">
+						<li><a href="{% url 'basic_app:home' %}">Home</a></li>
+						<li><a href="{% url 'basic_app:blog' %}">Blog</a></li>
+						<li><a href="{% url 'basic_app:projects' %}">Projects</a></li>
+						<li><a href="{% url 'basic_app:education' %}">Education</a></li>
+						<li><a href="{% url 'basic_app:experience' %}">Experience</a></li>
+						<li><a href="{% url 'basic_app:certifications' %}">Certifications</a></li>
+		        <li><a href="{% url 'basic_app:skill' %}">Skills</a></li>
+						<li><a href="{% url 'basic_app:activities' %}">Extra Curricular Activities</a></li>
+						</ul>
+						<br>
+						<br>
+						</div>
+						<div class="well bs-sidebar" >
+							<address>
+								<strong>
+		  					Address<br>
+		  					602 Cedarville Ln<br>
+		  					San Jose, CA 95133<br>
+		  					<abbr title="Phone">P:</abbr> (918) 557-7392
+							</strong>
+							</address>
+					</div>
+				  </div>
+					{% block body_block %}
+					 {% endblock %}
+					</div>
+
+  </div>
+
+</body>
+
+<footer>
+		<p style='margin-left:15px'><b style="color:black"> Contact &emsp; </b>  <a href="https://www.linkedin.com/in/mituntalukder" style="color:black"><strong >LinkedIn</strong></a> |
+			<a href="https://www.facebook.com/mithun.talukder.52" style="color:black"><strong style="color:black">Facebook</strong></a> | <a href="https://www.github.com/mithun2k5" style="color:black"><strong>GitHub</strong></a>
+			<span id="two"><strong>This site is developed by using Django</strong></span>
+			<span style="float: right" style="color:black"> <strong style="color:black">&copy; Copyright 2018</strong>&nbsp;|&nbsp;<strong style="color:black">Mitun Talukder</strong></span></p>
+</footer>
+</div>
+
+<script type="text/javascript" src="{% static 'js/master.js' %}"></script>
+<script src="{% static 'js/color-changer.js' %}"></script>
+
+</html>

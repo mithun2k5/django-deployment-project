@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load staticfiles %}
+	{% block body_block %}
+	<div class="col-sm-7">
+	<div class='container-fluid'>
+
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+<h3><strong>New Project : IPv4 Subnet Calculator</strong></h3>
+		</div>
+	  <div class="panel-body">
+
+<ul id="one" align="justify">
+
+	<h4><strong>Enter IPv4 block with prefix.</strong></h4>
+	<strong>For example, 10.0.0.0/8 or 175.10.20.30/20 or 223.0.0.0/25 etc</strong>
+	<br></br>
+
+		<form action="" method="POST">
+				{{ form.as_p }}
+				{% csrf_token %}
+				<input type="submit" class="btn btn-primary" value="Submit">
+		</form>
+
+</ul>
+<hr>
+<h3><strong>Other Recent Projects</strong></h3>
+
+<h4><strong><a href="{% url 'basic_app:whois' %}"> Whois Search Tool</a></strong></h4>
+
+<h4><strong><a href="{% url 'basic_app:timezoneconversion' %}"> Timezone Conversion</a></strong></h4>
+
+<h4><strong><a href="{% url 'basic_app:changereturn' %}"> Change Return Program (used in Restaurant)</a></strong></h4>
+
+<h4><strong><a href="{% url 'basic_app:binarytodecimal' %}"> Binary to Decimal Converter</a></strong></h4>
+
+<h4><strong><a href="{% url 'basic_app:decimaltobinary' %}"> Decimal to Binary Converter</a></strong></h4>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="col-sm-3">
+	<img src="{% static 'images/mithun_new4.jpg' %}" alt="face" class="img-rounded">
+</div>
+
+{% endblock %}

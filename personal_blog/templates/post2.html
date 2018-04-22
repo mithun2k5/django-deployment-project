@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+	{% block body_block %}
+  <div class="col-sm-10">
+  <div class='container-fluid'>
+
+  <div class="panel panel-info">
+    <div class="panel-heading">
+  <h3><strong>
+<center id ="three">
+    Software Defined Networking
+</center>
+  </strong></h3>
+    </div>
+    <div class="panel-body">
+    <p style="text-align:justify" id="one"> Software Defined Networking paradigm emergence from the idea of programmable networks. Computer networks are built from a large number of network devices such as router, switches etc. and middle-boxes such as firewall, load balancers etc. While adapting to network changes, in distributed model of network architecture, a network engineer need to change the configurations manually in all distributed devices in the network. Whereas, in SDN, as control plane is decoupled from data plane and being an software programmable centralized model and having logically centralized network intelligence, any changes in network are communicated to the centralized controller which in turn decides, how to populate the forwarding tables within each switch and router it controls. In SDN, only controller maintains the state of the network topology, and network devices work as simple forwarding devices, hence there is reduction of cost and complexity in network devices.</p>
+<br>
+    <p style="text-align:justify" id="one">Moreover, in SDN, the isolation of the forwarding hardware from the control logic, allows easier deployment of new protocols and applications, which accelerates innovation due to its openness in nature. There is significant various consolidation of middle-boxes to software control, for example in SDN, we don’t need to deploy separate firewall, load balancer etc. as these functions can be easily programmable by open-flow controller in SDN. </p>
+<br>
+    <p style="text-align:justify" id="one">Another important consideration for network device deployment is minimum-power consumption. SDN plays an important role in less power consumption. A network-wide power manager that uses SDN architecture, to find-out the minimum-power network subset, which satisfies present network conditions and turn offs network devices that are not needed. Research shows that there is power savings of 26-62% in varying traffic conditions in SDN. </p>
+<br>
+    <p style="text-align:justify" id="one">In terms of scalability, SDN outperforms traditional dedicated distributed network, by reducing the overhead of the centralized controller in many aspects such as keeping all traffic in the data plane by selectively passing packets to the intermediate network devices that store the necessary rules and so as to avoid bottleneck at the controller and achieves scalability.</p>
+<br>
+    <p style="text-align:justify" id="one">In cloud based architecture, SDN plays important role providing network virtualization support. A single set of commands can be issued by network administrator to assign virtual machines, virtual storage, virtual networking to a new user with guaranteed service level. Whereas, in traditional distributed network, three network administrators and vendors may need to be informed for the new user requirements. </p>
+<br>
+    <p style="text-align:justify" id="one">Though the open-flow controller in the SDN architecture, poses single point of failure, multiple controllers can be used to reduce latency and to increase fault tolerance, which means there can be connections of multiple controllers to a network device and would allow backup controller to take over in case of failure event. Moreover, network device-to-controller latency, which has significant impact on network behavior, can be tackled my providing redundant connections from controllers to the network device. </p>
+<br>
+    <p style="text-align:justify" id="one">As our present network becomes heterogeneous ranging from wired, infrastructure-based wireless (e.g., wireless mesh network, cellular network) to infrastructure-less wireless networks (e.g., vehicular network, mobile ad hoc network), self-organizing network is an important paradigm for seamless network connectivity. SDN has potential to facilitate deployment and management of self-organizing network, to shift network characteristics from reactive to proactive mode. Using big data analytics, in SDN design architecture, different network rules can be provided proactively, in open flow controller after analyzing traffic distributions.</p>
+<br>
+    <p style="text-align:justify" id="one"> <span style="text-decoration:underline;"> References</span>
+<br>
+<ol>
+  <li style="text-align:justify" id="one"> Nunes, Bruno, et al. "A survey of software-defined networking: Past, present, and future of programmable networks." Communications Surveys & Tutorials, IEEE 16.3 (2014): 1617-1634. </li>
+<li style="text-align:justify" id="one"> Farhady, Hamid, HyunYong Lee, and Akihiro Nakao. "Software-Defined Networking: A survey." Computer Networks 81 (2015): 79-95.</li>
+<li style="text-align:justify" id="one"> Lee, Gary. Cloud Networking: Understanding Cloud-based Data Center Networks. Morgan Kaufmann, 2014.</li>
+</ol>
+    </p>
+
+  </div>
+  </div>
+  </div>
+  </div>
+  {% endblock %}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+	{% block body_block %}
+
+  <div class="col-sm-10">
+  <div class='container-fluid'>
+
+  <nav class="nav nav-tabs">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand">Projects</a>
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="{% url 'basic_app:project1' %}"><strong id="nine">Project 1</strong></a></li>
+            <li><a href="{% url 'basic_app:project2' %}"><strong id="nine">Project 2</strong></a></li>
+            <li><a href="{% url 'basic_app:project3' %}"><strong id="nine">Project 3</strong></a></li>
+            <li><a href="{% url 'basic_app:project4' %}"><strong id="nine">Project 4</strong></a></li>
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+	<h3><strong>Project 4</strong></h3>
+		</div>
+		<div class="panel-body">
+
+	<ul id="one" align="justify">
+		<strong>Multi-photon Fault Tolerant Quantum Key Distribution Protocol</strong>
+    <li> 	In 2000, a new concept of quantum cryptography was proposed named as Y-00. It belongs to the class of quantum stream cipher randomized by quantum noise from measurement of coherent state. It supersedes performance of classical cryptography exploiting quantum effects of optical fiber communication. Moreover, only symmetric key encryption supported by quantum key distribution cannot improve the security. In classical cryptography, which provides only complexity-based security, observation of Eve and observation of Bob is always same. But, in Y-00 protrocol, utilizing the pre-shared key, it is possible to exceed the Shannon limit in cryptography considering the effect of quantum noise. Y-00 protocol enhances information-theoretic security of classical random cipher using randomized quantum noise effect.</li>
+		<li> 	In this research work, we have analyzed and developed “refresh”/update method of pre-shared or seed key of a typical PRNG used, in Y-00 protocol (multi-photon quantum stream cipher) so that any side information on the seed key can be distilled and seed key can be refreshed when the desired entropy-level of the seed key is compromised. </li>
+	</div>
+	</div>
+</div>
+</div>
+
+  {% endblock %}

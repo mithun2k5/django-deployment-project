@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load staticfiles %}
+	{% block body_block %}
+	<div class="col-sm-7">
+	<div class='container-fluid'>
+
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+<h3><strong>New Project : Decimal to Binary Converter</strong></h3>
+		</div>
+	  <div class="panel-body">
+
+<ul id="one" align="justify">
+
+	<strong> Enter Decimal Value <br>
+  </strong>
+	<br></br>
+
+		<form action="" method="POST">
+				{{ form.as_p }}
+				{% csrf_token %}
+				<input type="submit" class="btn btn-primary" value="Submit">
+		</form>
+
+</ul>
+<hr>
+<h3><strong>Other Recent Projects</strong></h3>
+
+<h4><strong><a href="{% url 'basic_app:whois' %}"> Whois Search Tool</a></strong></h4>
+
+<h4><strong><a href="{% url 'basic_app:subnetcalculator' %}"> IPv4 Subnet Calculator</a></strong></h4>
+
+<h4><strong><a href="{% url 'basic_app:timezoneconversion' %}"> Timezone Conversion</a></strong></h4>
+
+<h4><strong><a href="{% url 'basic_app:changereturn' %}"> Change Return Program (used in restaurant)</a></strong></h4>
+
+<h4><strong><a href="{% url 'basic_app:binarytodecimal' %}"> Binary to Decimal Converter</a></strong></h4>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="col-sm-3">
+	<img src="{% static 'images/mithun_new4.jpg' %}" alt="face" class="img-rounded">
+</div>
+
+{% endblock %}

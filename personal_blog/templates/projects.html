@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+	{% block body_block %}
+
+  <div class="col-sm-10">
+  <div class='container-fluid'>
+
+  <nav class="nav nav-tabs">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="nine">Projects</a>
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="{% url 'basic_app:project1' %}"><strong id="nine">Project 1</strong></a></li>
+            <li><a href="{% url 'basic_app:project2' %}"><strong id="nine">Project 2</strong></a></li>
+            <li><a href="{% url 'basic_app:project3' %}"><strong id="nine">Project 3</strong></a></li>
+            <li><a href="{% url 'basic_app:project4' %}"><strong id="nine">Project 4</strong></a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+	<h3><strong>Project 1</strong></h3>
+		</div>
+		<div class="panel-body">
+
+	<ul id="one" align="justify">
+		<strong>Consumer Complaints Analysis -2014</strong>
+		<li> 	In this project raw data of 1048575 records has been investigated from "Bureau of Consumer Financial Protection" (<a href="http://catalog.data.gov/dataset/consumer-complaint-database#topic=consumer_navigation">Link - Dataset</a>) to analyze consumer complain as per state, per company for the year of 2014. </li>
+		<li> 	After analyzing the filtered and processed data, a monthly consumer complaint analysis is given for the company which receives highest consumer complaints.</li>
+		<li> Finally, a visual data representation of the project is presented using Tableau public.</li>
+		<a href="https://github.com/mithun2k5/Data-Analysis-and-Visualization/tree/master/Consumer%20Complaints%20Analysis-2014">Link - Github</a>
+		<br>
+		<a href="https://public.tableau.com/profile/mitun.talukder#!/vizhome/2014-ConsumerComplainAnalysis/2014-ConsumerComplainAnalysis"> Link - Tableau</a>
+	</ul>
+	</div>
+	</div>
+
+
+
+</div>
+</div>
+
+  {% endblock %}

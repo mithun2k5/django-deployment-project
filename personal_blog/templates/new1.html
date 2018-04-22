@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load staticfiles %}
+	{% block body_block %}
+	<div class="col-sm-7">
+	<div class='container-fluid'>
+
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+<h3><strong>New Project</strong></h3>
+		</div>
+	  <div class="panel-body">
+
+<ul id="one" align="justify">
+
+  {% for i in new_form %}
+  <li> {{ i }}</li>
+  {% endfor %}
+
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="col-sm-3">
+	<img src="{% static 'images/mithun_new4.jpg' %}" alt="face" class="img-rounded">
+</div>
+
+{% endblock %}

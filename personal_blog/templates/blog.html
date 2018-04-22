@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+	{% block body_block %}
+	<div class="col-sm-10">
+	<div class='container-fluid'>
+
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+	<h3><strong>Blog Post</strong></h3>
+		</div>
+		<div class="panel-body">
+			<ul id="one" align="justify">
+				<li class="list-group-item list-group-item-primary"><a href="{% url 'basic_app:post1' %}"><strong>Bangladesh: One Step Forward</strong></a></li>
+				<li class="list-group-item list-group-item-primary"><a href="{% url 'basic_app:post2' %}"> <strong>Software Defined Networking(SDN) </strong></a></li>
+				<li class="list-group-item list-group-item-primary"><a href="{% url 'basic_app:post3' %}"><strong>Cloud Networking</strong></a></li>
+				<li class="list-group-item list-group-item-primary"><a href="#"><strong>Load Balancer: A Nitty-Gritty Detail</strong></a></li>
+				<li class="list-group-item list-group-item-primary"><a href="#"><strong>How HTTP works</strong></a></li>
+
+
+			</ul>
+	</div>
+
+	</div>
+	</div>
+</div>
+
+  {% endblock %}

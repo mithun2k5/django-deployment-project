@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load staticfiles %}
+	{% block body_block %}
+	<div class="col-sm-7">
+	<div class='container-fluid'>
+
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+<h3><strong>New Project : Time Conversion</strong></h3>
+		</div>
+	  <div class="panel-body">
+
+<ul id="one" align="justify">
+
+	<h4><strong>Date and time example: Year Month Date Hour Minute (2017 5 15 12 15)</strong></h4>
+	<strong>Time Zone Format Example:<br>
+		      US/Eastern Time: est<br>
+		      US/Pacific Time: pst<br>
+		      US/Central Time: cst<br>
+					UTC Time: utc etc.
+  </strong>
+	<br></br>
+
+		<form action="" method="POST">
+				{{ form.as_p }}
+				{% csrf_token %}
+				<input type="submit" class="btn btn-primary" value="Submit">
+		</form>
+
+</ul>
+<hr>
+<h3><strong>Other Recent Projects</strong></h3>
+
+<h4><strong><a href="{% url 'basic_app:whois' %}"> Whois Search Tool</a></strong></h4>
+
+<h4><strong><a href="{% url 'basic_app:subnetcalculator' %}"> IPv4 Subnet Calculator</a></strong></h4>
+
+<h4><strong><a href="{% url 'basic_app:changereturn' %}"> Change Return Program (used in Restaurant)</a></strong></h4>
+
+<h4><strong><a href="{% url 'basic_app:binarytodecimal' %}"> Binary to Decimal Converter</a></strong></h4>
+
+<h4><strong><a href="{% url 'basic_app:decimaltobinary' %}"> Decimal to Binary Converter</a></strong></h4>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="col-sm-3">
+	<img src="{% static 'images/mithun_new4.jpg' %}" alt="face" class="img-rounded">
+</div>
+
+{% endblock %}
